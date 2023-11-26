@@ -1,6 +1,9 @@
 # Ticket-Booking-System
 Console project in Java and written unit test cases in Junit.
 
+### Demo Video
+* **`https://tinyurl.com/TicketSysDemoVid`-** 
+
 ### There are two panels
 1. Admin Panel
 2. Customer Panel 
@@ -17,7 +20,7 @@ Console project in Java and written unit test cases in Junit.
 * **`Cancel`-**  To cancel a ticket, must be before the cancellation window
 
 ### Constraints
-Constraints:
+Constraints made:
 - Assume max seats per row is 10 and max rows are 26. Example seat number A1,  H5 etc. The “Add” command for admin must ensure rows cannot be added beyond the upper limit of 26.
 - After booking, User can cancel the seats within a time window of 2 minutes (configurable).  
 Cancellation after that is not allowed.

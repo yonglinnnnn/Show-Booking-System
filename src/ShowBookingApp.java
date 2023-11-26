@@ -126,7 +126,7 @@ class ShowBookingApp {
                                     clearCmd();
                                     try {
                                         String[] getCancelDetails = inputLine.split(" ");
-                                        bookingSys.cancelBooking(getCancelDetails[1], getCancelDetails[2]);
+                                        bookingSys.cancelBooking(getCancelDetails[1].toLowerCase(), getCancelDetails[2]);
                                     } catch (Exception e) {
                                         System.out.println("An error occurred: " + e.getMessage());
                                     }
