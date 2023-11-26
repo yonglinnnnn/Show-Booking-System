@@ -3,7 +3,6 @@ import java.io.*;
 import java.util.*;
 
 class ShowBookingApp {
-
     static Scanner sc = new Scanner(System.in);
 
     public static void clearCmd() throws InterruptedException, IOException, SQLException {
@@ -33,12 +32,14 @@ class ShowBookingApp {
                             System.out.println("-------Admin panel------");
                             System.out.println("Please type in the command:");
                             System.out.println("------------------------------------------");
-                            System.out.println("Setup <Show Number> <Number of Rows> <Number of seats per row> <Cancellation window in minutes>");
+                            System.out.println(
+                                    "Setup <Show Number> <Number of Rows> <Number of seats per row> <Cancellation window in minutes>");
                             System.out.println("View <Show Number>");
                             System.out.println("Exit");
                             System.out.println("------------------------------------------");
                             System.out.println("Enter command...:");
-                            String inputLine = sc.nextLine().toUpperCase();;
+                            String inputLine = sc.nextLine().toUpperCase();
+                            ;
                             try (Scanner lineScanner = new Scanner(inputLine)) {
                                 if (lineScanner.hasNext()) {
                                     adminCommand = lineScanner.next().toLowerCase();

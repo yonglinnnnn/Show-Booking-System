@@ -12,6 +12,7 @@ class Seat {
         this.isBooked = false;
     }
 
+    // getters
     public String getTicketNumber() {
         return ticketNumber;
     }
@@ -33,6 +34,7 @@ class Seat {
     }
 
     public void book(String ticketNumber, String phoneNumber, LocalDateTime dateTime) {
+        // Set everything to the value when seat is booked
         isBooked = true;
         this.ticketNumber = ticketNumber;
         this.phoneNumber = phoneNumber;
@@ -40,6 +42,7 @@ class Seat {
     }
 
     public void cancelBooking() {
+        // Set everything to default value when ticket is cancelled
         isBooked = false;
         this.ticketNumber = "";
         this.phoneNumber = "";

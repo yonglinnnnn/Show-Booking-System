@@ -14,7 +14,8 @@ class BookingSystem {
             System.out.println("Show setup completed for Show Number: " + showNumber);
             shows.get(showNumber).getAllSeats();
         } else {
-            System.out.println("Invalid setup parameters for the show.");
+            System.out.println(
+                    "Invalid setup parameters for the show. Max no. of rows = 26, max no. of seats per row = 10, max cancellation window = 2.");
         }
     }
 
@@ -22,7 +23,7 @@ class BookingSystem {
         if (shows.containsKey(showNumber)) {
             Show show = shows.get(showNumber);
             if (show != null) {
-                System.out.println("--- Viewing details for Show Number: " + showNumber +  " ---");
+                System.out.println("--- Viewing details for Show Number: " + showNumber + " ---");
                 System.out.println("--- Show #, Ticket #, Phone #, Seat # ---");
                 show.viewShow();
             }

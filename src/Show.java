@@ -165,5 +165,4 @@ class Show {
             availableSeats.clear();
         }
     }
-
 }

@@ -1,5 +1,5 @@
 # Ticket-Booking-System
-Console project in Java.
+Console project in Java and written unit test cases in Junit.
 
 ### There are two panels
 1. Admin Panel
@@ -23,5 +23,8 @@ Constraints:
 Cancellation after that is not allowed.
 - Only one booking per phone# is allowed per show.
 
-### Assumptions
-1. Assume that there is a login function for each users.
+### Unit test cases
+Unit test cases are written in * **`ShowBookingAppTest.java`-**.
+I checked for:
+- Valid/invalid scenarios for both Admin and Customer panel.
+- Constraints stated in case study
