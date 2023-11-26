@@ -1,4 +1,3 @@
-import java.time.LocalDateTime;
 import java.util.*;
 
 class BookingSystem {
@@ -23,7 +22,8 @@ class BookingSystem {
         if (shows.containsKey(showNumber)) {
             Show show = shows.get(showNumber);
             if (show != null) {
-                System.out.println("Viewing details for Show Number: " + showNumber);
+                System.out.println("--- Viewing details for Show Number: " + showNumber +  " ---");
+                System.out.println("--- Show #, Ticket #, Phone #, Seat # ---");
                 show.viewShow();
             }
         } else {
